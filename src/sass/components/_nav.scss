@@ -1,0 +1,48 @@
+@use '../base/colors' as *;
+.nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1% 2%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: sticky;
+    &__links{
+        display: flex;
+        width: 100%;
+        gap: 2%;
+        &__item{
+            color: $green;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    }
+    &__cart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 3rem;
+        height: 3rem;
+        background-color: transparent;
+        border: 1px solid $green;
+        border-radius: 50%;
+        cursor: pointer;
+        &__img{
+            width: 80%;
+        }
+        &__num{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $red;
+            color: white;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            translate: 25% 25%;
+        }
+    }
+}
